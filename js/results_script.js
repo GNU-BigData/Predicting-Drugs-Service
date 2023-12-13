@@ -62,11 +62,11 @@ function setupDrugRiskTestButton(urlParams) {
             Age: parseFloat(urlParams.get('age')),
             Education: parseFloat(urlParams.get('education')),
             Country: parseFloat(urlParams.get('country')),
-            Nscore: parseInt(urlParams.get('N')),
-            Escore: parseInt(urlParams.get('E')),
-            Oscore: parseInt(urlParams.get('O')),
-            Ascore: parseInt(urlParams.get('A')),
-            Cscore: parseInt(urlParams.get('C')),
+            Nscore: scaleScore(parseInt(urlParams.get('N'))),
+            Escore: scaleScore(parseInt(urlParams.get('E'))),
+            Oscore: scaleScore(parseInt(urlParams.get('O'))),
+            Ascore: scaleScore(parseInt(urlParams.get('A'))),
+            Cscore: scaleScore(parseInt(urlParams.get('C'))),
             Impulsive: parseInt(urlParams.get('BIS')),
             SS: parseInt(urlParams.get('IMP')),
         };
@@ -107,4 +107,8 @@ function setupDrugRiskTestButton(urlParams) {
             document.getElementById('error-message').innerText = "서비스에 문제가 발생했습니다. 나중에 다시 시도해 주세요.\n\n에러 메시지: " + error.message + ". ";
         });
     });
+}
+
+function scaleScore(score) {
+    return Math.round((60 / 40) * score);
 }

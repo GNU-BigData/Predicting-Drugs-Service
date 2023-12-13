@@ -19,5 +19,10 @@
 **개발 자문**
 * <img src="https://cdn-icons-png.flaticon.com/256/12222/12222560.png" width="12" height="12"> GPT
 
+
 # 소개
 ![(2023)SW전시회_STOP IT](https://github.com/godxxy5453/Predicting-Drugs/assets/61715265/3c64961a-0f38-4ffa-8557-a35a93bbe42b)
+
+
+# 서버
+라즈베리파이4B (24시간)

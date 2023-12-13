@@ -72,7 +72,7 @@ function setupDrugRiskTestButton(urlParams) {
         };
 
         // Make an API request and handle the response
-        fetch('http://capsto.n-e.kr:8000/predict', {
+        fetch('https://capsto.n-e.kr:8000/predict', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

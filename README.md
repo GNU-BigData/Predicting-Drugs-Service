@@ -1,11 +1,13 @@
 <div align="center">
   <img src="https://github.com/GNU-BigData/Predicting-Drugs/assets/61715265/a5adda39-6d19-4f8a-824c-31732beea19f"/>
-
 </div>
 
 # 여기서 해보세요: https://jongman.kro.kr
 
 성격 유형을 검사하고, 나의 약물 위험도를 알아볼 수 있어요. 
+<div align="center">
+  <img width="123" alt="스크린샷 2023-12-14 101518" src="https://github.com/GNU-BigData/Predicting-Drugs-Service/assets/61715265/017c4206-556e-418d-88d6-062512456f09">
+</div>
 
 **예측 모델 개발:**
 * 임소희

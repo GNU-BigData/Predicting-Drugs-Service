@@ -111,7 +111,7 @@ function finishTest() {
         E: scores.E,
         A: scores.A,
         C: scores.C,
-        N: scores.C,
+        N: scores.N,
         O: scores.O,
         BIS: scores.BIS,
         IMP: scores.IMP,

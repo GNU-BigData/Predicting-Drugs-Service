@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -16,53 +15,74 @@
         <h1>나의 약물 위험도</h1>
     </header>
     <section class="introduction">
-        <img src="img/main_drug.png" alt="main_img" width="300">
-        <p>성격 유형이 행동과 선택에 결정적인 영향을 미친다고 해요.<br>성격 유형에 따른 약물 사용에 대한 위험성과 소비 위험 종류를 검사해 봐요. </p>
+        <img src="img/main_drug.png" alt="main_img" width="200">
+        <p>나의 약물 위험도는 얼마일까요?
+        <br>성격 유형 검사를 통해 약물 사용에 대한 위험성과 소비 위험 종류를 알아볼 수 있습니다.
+        <br>빠른 검사는 14문항, 정밀 검사는 54문항으로 이루어져 있습니다.</p>
     </section>
-    <section class="input-section">
-        <select id="age" name="age">
-            <option value="0.03461">나이 선택</option>
-            <option value="-0.95197">18-24</option>
-            <option value="-0.07854">25-34</option>
-            <option value="0.49788">35-44</option>
-            <option value="1.09449">45-54</option>
-            <option value="1.82213">55-64</option>
-            <option value="2.59171">65+</option>
-        </select>
 
-        <!-- <select id="gender" name="gender">
-            <option value="-0.00026">성별 선택</option>
-            <option value="0.48246">여성</option>
-            <option value="-0.48246">남성</option>
-        </select> -->
+    <div class="container">
+        <input type="checkbox" id="consentCheckbox" name="consent">
+        <label for="consentCheckbox">[선택] 개인정보 수집 및 이용 동의</label>
+        <button id="termsButton">약관 보기</button>
 
-        <select id="education" name="education">
-            <option value="-0.00379">교육 수준 선택</option>
-            <option value="-2.43591">16세 이전 학교 졸업</option>
-            <option value="-1.73790">16세에 학교 졸업</option>
-            <option value="-1.43719">17세에 학교 졸업</option>
-            <option value="-1.22751">18세에 학교 졸업</option>
-            <option value="-0.61113">대학 또는 대학교 중퇴</option>
-            <option value="-0.05921">전문 자격증/ 디플로마</option>
-            <option value="0.45468">대학 학위</option>
-            <option value="1.16365">석사 학위</option>
-            <option value="1.98437">박사 학위</option>
-        </select>
+        <section class="input-section" id="personalInfoSection">
+            <select id="age" name="age">
+                <option value="0.03461">나이 선택</option>
+                <option value="-0.95197">18-24</option>
+                <option value="-0.07854">25-34</option>
+                <option value="0.49788">35-44</option>
+                <option value="1.09449">45-54</option>
+                <option value="1.82213">55-64</option>
+                <option value="2.59171">65+</option>
+            </select>
 
-        <select id="country" name="country">
-            <option value="0.35554">국가 선택</option>
-            <option value="-0.09765">호주</option>
-            <option value="0.24923">캐나다</option>
-            <option value="-0.46841">뉴질랜드</option>
-            <option value="-0.28519">기타</option>
-            <option value="0.21128">아일랜드 공화국</option>
-            <option value="0.96082">영국</option>
-            <option value="-0.57009">미국</option>
-        </select>
-    </section>
+            <!-- <select id="gender" name="gender">
+                <option value="-0.00026">성별 선택</option>
+                <option value="0.48246">여성</option>
+                <option value="-0.48246">남성</option>
+            </select> -->
+
+            <select id="education" name="education">
+                <option value="-0.00379">교육 수준 선택</option>
+                <option value="-2.43591">16세 이전 학교 졸업</option>
+                <option value="-1.73790">16세에 학교 졸업</option>
+                <option value="-1.43719">17세에 학교 졸업</option>
+                <option value="-1.22751">18세에 학교 졸업</option>
+                <option value="-0.61113">대학 또는 대학교 중퇴</option>
+                <option value="-0.05921">전문 자격증/ 디플로마</option>
+                <option value="0.45468">대학 학위</option>
+                <option value="1.16365">석사 학위</option>
+                <option value="1.98437">박사 학위</option>
+            </select>
+
+            <select id="country" name="country">
+                <option value="0.35554">국가 선택</option>
+                <option value="-0.09765">호주</option>
+                <option value="0.24923">캐나다</option>
+                <option value="-0.46841">뉴질랜드</option>
+                <option value="-0.28519">기타</option>
+                <option value="0.21128">아일랜드 공화국</option>
+                <option value="0.96082">영국</option>
+                <option value="-0.57009">미국</option>
+            </select>
+        </section>
+
+        <div id="termsModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h3>서비스 이용 약관</h3>
+                <p>1. 서비스 개요<br>본 서비스는 사용자의 성격 유형을 분석하여 약물 사용에 대한 위험성 및 소비 위험 종류를 평가합니다. 이 평가는 개인의 나이, 교육 수준, 거주 국가에 기반하여 수행됩니다.</p>
+                <p>2. 개인정보의 수집 및 사용<br>본 서비스를 통해 수집되는 개인정보는 다음과 같습니다: 사용자의 나이, 교육 수준, 거주 국가<br>수집된 정보는 위험도 예측 모델의 정확도를 높이는 데 사용됩니다. 이 모델은 나이, 교육 수준, 국가 데이터를 기반으로 학습되었으므로, 해당 정보를 제공할 경우 더 정확한 결과를 얻을 수 있습니다.<br>정보 제공은 선택사항입니다. 정보를 제공하지 않을 경우, 평가는 평균값을 기반으로 수행됩니다.</p>
+                <p>3. 개인정보의 보호 및 보안<br>수집된 모든 개인정보는 본 서비스의 서버에 저장되지 않으며, 분석 목적으로만 사용됩니다.</p>
+                <p>4. 약관의 변경<br>본 약관은 필요에 따라 예고 없이 변경될 수 있습니다. 변경된 약관은 서비스 웹사이트에 게시되며, 이후 서비스 사용은 변경된 약관에 대한 동의로 간주됩니다.</p>
+            </div>
+        </div>
+
+    </div>
     
-    <button id="startSimpleTest">테스트 시작(약 1분)</button>
-    <button id="startTest">테스트 시작(약 5분)</button>
+    <button id="startSimpleTest">빠른 검사 (1분)</button>
+    <button id="startTest">정밀 검사 (5분)</button>
     
     <script src="js/script.js"></script>
 </body>

@@ -14,7 +14,11 @@
         <h1>약물 위험 테스트 결과</h1>
     </header>
 
-    <div id="personalityType"></div>
+    <section class="personality">
+        <p>나의 성격 유형은 다음과 같습니다.</p>
+        <div id="personalityType" class="personality-scores"></div>
+    </section>
+    
 
     <div class="main-container">
         <div id="personalityTypeChartContainer">
@@ -32,10 +36,13 @@
             </div>
         </div>
     </div>
-    
-    
- 
-    <div id="topDrugsInfo"></div>
+
+    <section class="explanation">
+        <h2>위험 약물 분류</h2>
+        <p>위험도가 높은 상위 3개 약물에 대한 분류 결과입니다.</p>
+    </section>
+
+    <div id="topDrugsInfo" class="cards-container"></div>
 
     <section class="conclusion">
         <img src="img/conclusion_end.png" alt="conclusion_img" width="500">

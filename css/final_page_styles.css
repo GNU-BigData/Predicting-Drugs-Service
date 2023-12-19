@@ -21,11 +21,42 @@ header h1 {
     font-family: 'YiSunShinDotumM', sans-serif;
 }
 
+section.explanation h2 {
+    margin-top: 50px;
+    font-weight: bold;
+    font-size: 36px;
+    font-family: 'YiSunShinDotumM', sans-serif;
+}
+
+section.explanation p {
+    margin-top: 10px;
+    font-size: 1.2em;
+    font-family: 'YiSunShinDotumM', sans-serif;
+}
+
 #personalityType {
     margin: 20px 0;
     margin-bottom: 50px;
     font-size: 1.2em;
 }
+
+.personality p {
+    font-size: 1.2em;
+}
+
+.personality #personalityType {
+    font-size: 32px;
+}
+
+.personality-scores {
+    font-size: 22px; /* 성격 유형 글자 크기 */
+}
+
+.personality-scores .score {
+    font-size: 14px; /* 점수 글자 크기 */
+    margin-left: 5px; /* 점수와 유형 사이의 간격 */
+}
+
 
 #circularProgress {
     width: 150px;
@@ -45,23 +76,90 @@ header h1 {
     color: #333;
 }
 
-#topDrugsInfo {
-    margin: 30px 0;
-    margin-top: 60px;
-    font-size: 1.1em;
+.cards-container {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .drug-info {
-    margin-top: 20px;
-    font-weight: bold;
-    font-size: 20px;
-    font-family: 'YiSunShinDotumM', sans-serif;
-    margin-bottom: 20px;
+    width: 220px;
+    height: 310px;
+    transition: transform 0.1s, box-shadow 0.1s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    background: white;
+    perspective: 1000px;
 }
-.h3, .drug-info p {
-    font-family: 'YiSunShinDotumM', sans-serif;
+
+.drug-image {
+    width: 100%; 
+    height: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    z-index: 1;
+}
+
+.drug-content {
+    padding: 10px;
+}
+
+.drug-info:hover .overlay {
+    filter: brightness(1.2) opacity(0.9);
+}
+
+.drug-info:active {
+    transform: scale(1.2);
+}
+
+.drug-info h3, .drug-info p {
+    margin: 15px;
     text-align: center;
 }
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(105deg, transparent 40%, rgba(255, 219, 112, 0.8) 45%, rgba(132, 50, 255 ,0.6) 50%, transparent 54%);
+    filter: brightness(1.1) opacity(0.8);
+    mix-blend-mode: color-dodge;
+    background-size: 150% 150%;
+    background-position: 100%;
+    transition: all 0.1s;
+    border-radius: 10px;
+    z-index: 2;
+}
+
+.expanded {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(2);
+    z-index: 1000;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+
+/* 기존 CSS 코드 ... */
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    z-index: 999;
+}
+
 
 section {
     position: relative;

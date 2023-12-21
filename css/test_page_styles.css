@@ -93,7 +93,7 @@ header h1 {
 
 .graph-container {
     /* Styles for graph container */
-    width: 50%; /* 또는 특정 픽셀 값 */
+    width: 360px; /* 또는 특정 픽셀 값 */
     height: auto;
     margin: auto; /* 가운데 정렬 */
 }

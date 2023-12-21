@@ -68,6 +68,7 @@ header h1 {
 
 .answer-buttons button:hover {
     background-color: #3762CC;
+    color: #E0EBFC;
 }
 
 #questionText {

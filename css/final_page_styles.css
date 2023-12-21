@@ -207,8 +207,8 @@ button {
 }
 
 button:hover {
-    background-color: #E0EBFC;
-    color: #3762CC;
+    background-color: #3762CC;
+    color: #E0EBFC;
 }
 
 section button:hover {

@@ -29,7 +29,7 @@ function displayRadarChart(scores) {
     const radarChart = new Chart(ctx, {
         type: 'radar',
         data: {
-            labels: ['E', 'A', 'C', 'N', 'O'],
+            labels: ['외향성 E', '우호성 A', '성실성 C', '신경성 N', '개방성 O'],
             datasets: [{
                 label: 'Personality Scores',
                 data: [scores.E, scores.A, scores.C, scores.N, scores.O],

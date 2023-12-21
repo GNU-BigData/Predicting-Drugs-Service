@@ -1,16 +1,15 @@
-
 const questions = [
-    { item: 1, text: "과묵하다고 본다." },
-    { item: 2, text: "대체로 믿을 만한 사람이라고 본다." },
-    { item: 3, text: "일을 철저히 하는 사람이라고 본다." },
-    { item: 4, text: "느긋하며 스트레스를 잘 해소하는 사람이라고 본다." },
-    { item: 5, text: "상상력이 풍부한 사람이라고 본다." },
-    { item: 6, text: "외향적이고 사교적인 사람이라고 본다." },
-    { item: 7, text: "다른 사람의 흠을 잘 잡는 경향이 있는 사람이라고 본다." },
-    { item: 8, text: "게으른 경향이 있는 사람이라고 본다 ." },
-    { item: 9, text: "신경이 예민한 사람이라고 본다 ." },
-    { item: 10, text: "예술적 관심이 거의 없는 사람이라고 본다." },
-    { item: 11, text: "취미가 자주 바뀐다." },
+    { item: 1, text: "과묵한 편이다." },
+    { item: 2, text: "나를 대체로 믿을 만한 사람으로 본다." },
+    { item: 3, text: "나를 일을 철저히 하는 사람이라고 본다." },
+    { item: 4, text: "나를 느긋하며 스트레스를 잘 해소하는 사람이라고 본다." },
+    { item: 5, text: "나를 상상력이 풍부한 사람이라고 본다." },
+    { item: 6, text: "나를 외향적이고 사교적인 사람이라고 본다." },
+    { item: 7, text: "나를 다른 사람의 흠을 잘 잡는 경향이 있는 사람이라고 본다." },
+    { item: 8, text: "나를 게으른 경향이 있는 사람이라고 본다 ." },
+    { item: 9, text: "나를 신경이 예민한 사람이라고 본다 ." },
+    { item: 10, text: "나를 예술적 관심이 거의 없는 사람이라고 본다." },
+    { item: 11, text: "취미가 자주 바뀌는 편이다." },
     { item: 12, text: "뭔가를 생각하고 있을 때 다른 생각이 떠오르는 경우가 많다." },
     { item: 13, text: "새롭고 흥미로운 경험과 감각을 즐기는데, 조금 무섭더라도 상관없다." },
     { item: 14, text: "어떻게 일할지에 대한 별다른 계획 없이 새로운 일을 시작하는 경향이 있다." },
@@ -35,7 +34,7 @@ if (!currentQuestionFromURL || currentQuestionFromURL === '1') {
 
 function displayQuestion() {
     const question = questions[currentQuestionIndex];
-    document.getElementById('questionText').textContent = question.text;
+    document.getElementById('questionText').textContent = "나는 " + question.text;
 
     const answerButtonsContainer = document.getElementById('answerButtons');
     answerButtonsContainer.innerHTML = '';

@@ -10,17 +10,14 @@
   <img width="123" alt="스크린샷 2023-12-14 101518" src="https://github.com/GNU-BigData/Predicting-Drugs-Service/assets/61715265/017c4206-556e-418d-88d6-062512456f09">
 </div>
 
-**예측 모델 개발:**
+**예측 모델 개발 담당:**
 * 임소희
 
-**분류 모델 개발:**
+**분류 모델 개발 담당:**
 * 최민화
 
-**웹 개발:**
+**프론트엔드/백엔드 개발:**
 * 윤종인
-
-**개발 자문**
-* <img src="https://cdn-icons-png.flaticon.com/256/12222/12222560.png" width="12" height="12"> GPT
 
 
 # 소개

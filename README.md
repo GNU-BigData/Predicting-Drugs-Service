@@ -1,8 +1,9 @@
 <div align="center">
-  <img src="https://github.com/GNU-BigData/Predicting-Drugs/assets/61715265/a5adda39-6d19-4f8a-824c-31732beea19f"/>
+  <img src="https://github.com/user-attachments/assets/e9d4a018-be4f-4c60-ad61-e560e6fd7038"/>
 </div>
 
-# 여기서 해보세요: https://jongman.kro.kr
+
+# 테스트 해보기(현재 운영종료): https://jongman.kro.kr
 
 성격 유형을 검사하고, 나의 약물 위험도를 알아볼 수 있어요. 
 <div align="center">
